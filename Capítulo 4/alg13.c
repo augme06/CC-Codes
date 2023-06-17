@@ -3,7 +3,7 @@
 int main(){
     char nome[30], sexo;
     printf("Insira o nome: ");
-    scanf("%29s", nome);
+    scanf("%29[^\n]", nome);
     printf("Insira o sexo (m/f): ");
     scanf(" %c", &sexo);
     if (sexo == 'm' || sexo == 'M'){
