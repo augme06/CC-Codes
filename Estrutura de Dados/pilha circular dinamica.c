@@ -52,7 +52,9 @@ TPilha * buscar(int key){
 }
 
 void dequeue(){
-
+    if (pilha == NULL)
+        return;
+    
     TPilha * destroyer = pilha;
     TPilha * first = pilha;
 
